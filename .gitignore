@@ -1,0 +1,35 @@
+# Secrets / local config
+.env
+.env.local
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# Build / dist caches kept, but lockfile-internal caches ignored
+.npm/
+
+# pip redirect junk files (created by stray ">=x.y" install args)
+=*
+/400
+/500
+
+# Vendor / reference frontend builds (not part of the dashboard; bundles contain
+# a hardcoded Mapbox token, so they are excluded from the repo)
+luxottica-package/
+monitor_codice/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
